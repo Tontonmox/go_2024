@@ -11,7 +11,7 @@ func Check(e error) {
 	}
 }
 
-func ReadInput(day string) []string {
+func ReadInputInSlice(day string) []string {
 	path := "./inputs/" + day
 	file, err := os.Open(path)
 

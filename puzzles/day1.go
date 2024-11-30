@@ -13,7 +13,7 @@ func Day1() {
 func part1() {
 	fmt.Println("Day 1 part 1")
 
-	inputs := utils.ReadInput("1")
+	inputs := utils.ReadInputInSlice("1")
 
 	for _, line := range inputs {
 		fmt.Println(line)
@@ -23,7 +23,7 @@ func part1() {
 func part2() {
 	fmt.Println("Day 1 part 2")
 
-	inputs := utils.ReadInput("1")
+	inputs := utils.ReadInputInSlice("1")
 
 	for _, line := range inputs {
 		fmt.Println(line)
