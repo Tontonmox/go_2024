@@ -2,19 +2,14 @@ package main
 
 import (
 	"fmt"
-	"go_2024/utils"
+	"go_2024/puzzles"
 	"os"
 )
 
 func main() {
-	fmt.Println("Hello World !!")
-
 	day := os.Args[1]
 
-	inputs := utils.ReadInput(day)
+	fmt.Println("This is day :" + day)
 
-	for _, line := range inputs {
-		fmt.Println(line)
-	}
-
+	puzzles.Day1()
 }
