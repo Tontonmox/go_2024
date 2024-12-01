@@ -11,8 +11,14 @@ func Check(e error) {
 	}
 }
 
-func ReadInputToSlice(day string) []string {
-	path := "./inputs/" + day
+func ReadInputToSlice(day string, isTest bool) []string {
+	var path string
+	if isTest {
+		path = "./samples/" + day
+	} else {
+		path = "./inputs/" + day
+	}
+
 	file, err := os.Open(path)
 
 	Check(err)

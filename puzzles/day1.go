@@ -8,12 +8,12 @@ import (
 	"strings"
 )
 
-func Day1() {
-	part1()
+func Day1(isTest bool) {
+	part1(isTest)
 }
 
-func part1() {
-	inputs := utils.ReadInputToSlice("1")
+func part1(isTest bool) {
+	inputs := utils.ReadInputToSlice("1", isTest)
 
 	var sliceA []int
 	var sliceB []int
