@@ -21,7 +21,12 @@ func main() {
 
 	}
 
-	fmt.Println("This is day :" + day)
-
-	puzzles.Day1(testLaunch)
+	switch day {
+	case "1":
+		puzzles.Day1(testLaunch)
+	case "2":
+		puzzles.Day2(testLaunch)
+	default:
+		fmt.Println("Valeur incorrecte entrée pour le jour")
+	}
 }

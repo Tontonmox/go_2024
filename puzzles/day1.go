@@ -9,10 +9,10 @@ import (
 )
 
 func Day1(isTest bool) {
-	part1(isTest)
+	d1part1(isTest)
 }
 
-func part1(isTest bool) {
+func d1part1(isTest bool) {
 	inputs := utils.ReadInputToSlice("1", isTest)
 
 	var sliceA []int
@@ -49,10 +49,10 @@ func part1(isTest bool) {
 		res_part1 += utils.AbsInt(a - sliceB[i])
 	}
 	fmt.Printf("Result day 1 part 1 : %d\n", res_part1)
-	part2(sliceA, sliceB)
+	d1part2(sliceA, sliceB)
 }
 
-func part2(a []int, b []int) {
+func d1part2(a []int, b []int) {
 	res_part2 := 0
 	for _, a := range a {
 		nbOcc := utils.CountInSlice(
