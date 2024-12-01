@@ -11,7 +11,7 @@ func Check(e error) {
 	}
 }
 
-func ReadInputInSlice(day string) []string {
+func ReadInputToSlice(day string) []string {
 	path := "./inputs/" + day
 	file, err := os.Open(path)
 
@@ -26,7 +26,7 @@ func ReadInputInSlice(day string) []string {
 	return fileText
 }
 
-// Fonction valeur absolue pour des int
+// Abs but with int
 func AbsInt(x int) int {
 	if x < 0 {
 		return -x
@@ -34,7 +34,10 @@ func AbsInt(x int) int {
 	return x
 }
 
-// Fonction qui compte les éléments dans une slice répondant à une condition
+// Count elements in a slice meeting a condition
+// Param 1 : slice
+// Param 2 : func returning a bool
+// For each element, if the function returns true, +1 in the counter
 func CountInSlice[T any](slice []T, f func(T) bool) int {
 	count := 0
 	for _, s := range slice {
