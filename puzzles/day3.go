@@ -20,8 +20,6 @@ func Day3(isTest bool) {
 
 	//Part 2
 	for _, input := range inputs {
-		//fmt.Println("Debut input")
-		//fmt.Println(input)
 		for {
 			//Search for first dont't()
 			posDont := strings.Index(input, "don't()")
@@ -32,18 +30,15 @@ func Day3(isTest bool) {
 			posDo := strings.Index(input[posDont:], "do()")
 			if posDo == -1 {
 				input = input[:posDont]
-				//fmt.Println(input)
 				break
 			}
 			posDo += posDont
 			//Replace everything between don't() and do(), including the instructions, by a *
 			input = input[:posDont] + "*" + input[posDo+4:]
-			//fmt.Println(input)
 		}
 		result2 += countMul(input)
 	}
 	fmt.Println(result2)
-
 }
 
 func countMul(input string) int {
