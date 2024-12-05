@@ -30,6 +30,8 @@ func main() {
 		puzzles.Day3(testLaunch)
 	case "4":
 		puzzles.Day4(testLaunch)
+	case "5":
+		puzzles.Day5(testLaunch)
 	default:
 		fmt.Println("Valeur incorrecte entrée pour le jour")
 	}
