@@ -53,3 +53,9 @@ func CountInSlice[T any](slice []T, f func(T) bool) int {
 	}
 	return count
 }
+
+func ReplaceAtIndex(in string, r rune, i int) string {
+	out := []rune(in)
+	out[i] = r
+	return string(out)
+}

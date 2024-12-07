@@ -1,3 +1,4 @@
 #Ignore inputs and samples
 inputs/
 samples/
+.vscode/
